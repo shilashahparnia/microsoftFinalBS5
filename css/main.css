@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Shila; }
+
+body {
+  background-color: #171717; }
+
+@font-face {
+  font-family: Shila;
+  src: url(../fonts/SegoeUI.eot);
+  src: url(../fonts/SegoeUI.ttf);
+  src: url(../fonts/SegoeUI.woff);
+  src: url(../fonts/SegoeUI.woff2); }
+
+.swiper {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex; }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.swiper-button-next > i.arrow-icon {
+  font-size: 35px;
+  color: grey; }
+
+.swiper-button-next::after {
+  display: none; }
+
+.swiper-button-prev > i.arrow-icon {
+  font-size: 35px;
+  color: grey; }
+
+.swiper-button-prev::after {
+  display: none; }
+
+main.wrapper {
+  width: 100%; }
+
+figure.figure > img {
+  filter: invert(100%) sepia(0%) saturate(7466%) hue-rotate(116deg) brightness(105%) contrast(94%); }
+
+.carousel-control-prev-icon:after {
+  content: ""; }
+
+.carousel-control-next-icon:after {
+  content: ""; }

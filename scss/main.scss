@@ -1,0 +1,19 @@
+@import "variables";
+@import "swiper";
+
+main.wrapper{
+    width: 100%;
+}
+figure.figure {
+  > img {
+    filter: invert(100%) sepia(0%) saturate(7466%) hue-rotate(116deg)
+      brightness(105%) contrast(94%);
+  }
+}
+.carousel-control-prev-icon:after {
+    content: ""
+}
+
+.carousel-control-next-icon:after {
+    content: ""
+}
