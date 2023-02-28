@@ -54,3 +54,12 @@ figure.figure > img {
 
 .carousel-control-next-icon:after {
   content: ""; }
+
+/*div.me{
+  height: 500px;
+}*/
+div.box {
+  height: 600px; }
+
+p, a {
+  text-align: justify; }
