@@ -5,6 +5,10 @@ var swiper = new Swiper(".myShila", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -27,10 +31,10 @@ var swiper = new Swiper(".mySurface", {
   loopFillGroupWithBlank: "true",
   centeredSlides: "true",
   spaceBetween: 0,
-  /*autoplay: {
-    delay: 2000,
+  autoplay: {
+    delay: 2200,
     disableOnInteraction: false,
-  },*/
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -89,3 +93,29 @@ itemss.addEventListener("click", function () {
     menu = true;
   }
 });
+
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

@@ -256,15 +256,65 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class=" nav-link text-white force" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Sign in
+                <button class="btn btn-black text-white text-lowercase" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Sign in
                   <i class="fa-solid fa-user text-white ms-xxl-2 fs-6"></i>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
         </div>        
       </nav>
-      <!--end navbar for xxl xl sizes-->
+       <!--end navbar for xxl xl sizes-->
+      <!-- begin sign in modal -->
+      <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      <div class="modal-header">
+        <img src="./images/iconWithText.png" alt="icon" height="25px">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+       <div class="container-fluid">
+        <div><h4 class="fw-bold mb-3">Sign in</h3></div>
+        <div>
+          <form>
+            <div class="form-outline mb-4">
+              <input type="email" id="form1Example1" class="form-control" />
+              <label class="form-label" for="form1Example1">Email address</label>
+            </div>
+            <div class="form-outline mb-4">
+              <input type="password" id="form1Example2" class="form-control" />
+              <label class="form-label" for="form1Example2">Password</label>
+            </div>
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" unchecked />
+                  <label class="form-check-label" for="form1Example3"> Remember me </label>
+                </div>
+              </div>
+              <div class="col">
+                <a href="#!">Forgot password?</a>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block text-lowercase fw-bold">Sign in</button>
+          </form>
+        </div>
+        <div class="d-flex mt-4">
+          <p>No account?</p><a class="ms-2" href="#">Creat one!</a>
+        </div>
+        <div>
+          <a href="#">Sign in with Windows Hello or a security key<i class="fa-regular fa-circle-question ms-2"></i></a>
+        </div>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-block text-lowercase fw-bold" data-bs-dismiss="modal"><i class="fa-solid fa-key me-2 fs-3"></i>Sign in options</button>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- end sign in modal -->
       <!--begin navbar for lg md sm xs sizes-->
       <nav class="navbar navbar-expand-xl fixed-top bg-black d-xxl-none d-xl-none d-lg-block d-md-block d-sm-block d-block">
         <div class="container-fluid d-flex">
@@ -1307,7 +1357,6 @@
       <!--begin footer-->
       <footer class="bg-black text-center text-white">
        <div class="container-fluid p-4">
-        <!--begin social media-->
       <section class="mb-4">
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-facebook-f"></i
@@ -1323,10 +1372,8 @@
       ></a>
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-telegram"></i></a>
-    </section>
-     <!--end social media-->
-     <!--begin search row-->
-    <section>
+      </section>
+      <section>
       <form action="">
         <div class="row d-flex justify-content-center">
           <div class="col-auto">
@@ -1347,36 +1394,35 @@
           </div>
         </div>
       </form>
-    </section>
-    <!--end search row-->
-    <nav>
+      </section>
+      <nav>
       <div class="row text-start">
         <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 mb-3 mb-md-0">
           <h6 class="fw-bold">What's new</h6>
           <ul class="list-unstyled">
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Surface Pro 9</a>
+              <a href="#" class="linkSmaller">Surface Pro 9</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Surface Laptop 5</a>
+              <a href="#" class="linkSmaller">Surface Laptop 5</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Surface Studio 2+</a>
+              <a href="#" class="linkSmaller">Surface Studio 2+</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Surface Laptop Go 2</a>
+              <a href="#" class="linkSmaller">Surface Laptop Go 2</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Surface Laptop Studio</a>
+              <a href="#" class="linkSmaller">Surface Laptop Studio</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Surface Go 3</a>
+              <a href="#" class="linkSmaller">Surface Go 3</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft 365</a>
+              <a href="#" class="linkSmaller">Microsoft 365</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Windows 11 apps</a>
+              <a href="#" class="linkSmaller">Windows 11 apps</a>
             </li>
           </ul>
         </div>
@@ -1384,28 +1430,28 @@
           <h6 class="fw-bold">Microsoft Store</h6>
           <ul class="list-unstyled">
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Account Profile</a>
+              <a href="#" class="linkSmaller">Account Profile</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Download Center</a>
+              <a href="#" class="linkSmaller">Download Center</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Store Support</a>
+              <a href="#" class="linkSmaller">Microsoft Store Support</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Returns</a>
+              <a href="#" class="linkSmaller">Returns</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Order Tracking</a>
+              <a href="#" class="linkSmaller">Order Tracking</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Virtual workshops and training</a>
+              <a href="#" class="linkSmaller">Virtual workshops and training</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Store Promise</a>
+              <a href="#" class="linkSmaller">Microsoft Store Promise</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Flexible Payments</a>
+              <a href="#" class="linkSmaller">Flexible Payments</a>
             </li>
           </ul>
         </div>
@@ -1413,29 +1459,29 @@
           <h6 class="fw-bold">Education</h6>
           <ul class="list-unstyled">
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft in education
+              <a href="#" class="linkSmaller">Microsoft in education
               </a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Devices for education</a>
+              <a href="#" class="linkSmaller">Devices for education</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Teams for Education</a>
+              <a href="#" class="linkSmaller">Microsoft Teams for Education</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft 365 Education</a>
+              <a href="#" class="linkSmaller">Microsoft 365 Education</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Education consultation appointment</a>
+              <a href="#" class="linkSmaller">Education consultation appointment</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Educator training and development</a>
+              <a href="#" class="linkSmaller">Educator training and development</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Deals for students and parents</a>
+              <a href="#" class="linkSmaller">Deals for students and parents</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Azure for students</a>
+              <a href="#" class="linkSmaller">Azure for students</a>
             </li>
           </ul>
         </div>
@@ -1443,29 +1489,29 @@
           <h6 class="fw-bold">Business</h6>
           <ul class="list-unstyled">
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Cloud
+              <a href="#" class="linkSmaller">Microsoft Cloud
               </a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Security</a>
+              <a href="#" class="linkSmaller">Microsoft Security</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Dynamics 365</a>
+              <a href="#" class="linkSmaller">Dynamics 365</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft 365 </a>
+              <a href="#" class="linkSmaller">Microsoft 365 </a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Power Platform</a>
+              <a href="#" class="linkSmaller">Microsoft Power Platform</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Power Teams</a>
+              <a href="#" class="linkSmaller">Microsoft Power Teams</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Power Industry</a>
+              <a href="#" class="linkSmaller">Microsoft Power Industry</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Small Business
+              <a href="#" class="linkSmaller">Small Business
               </a>
             </li>
           </ul>
@@ -1474,30 +1520,30 @@
           <h6 class="fw-bold">Developer & IT</h6>
           <ul class="list-unstyled">
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Azure
+              <a href="#" class="linkSmaller">Azure
               </a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Developer Center</a>
+              <a href="#" class="linkSmaller">Developer Center</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Documentation</a>
+              <a href="#" class="linkSmaller">Documentation</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Learn
+              <a href="#" class="linkSmaller">Microsoft Learn
               </a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Microsoft Power Platform</a>
+              <a href="#" class="linkSmaller">Microsoft Power Platform</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Azure Marketplace</a>
+              <a href="#" class="linkSmaller">Azure Marketplace</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">AppSource</a>
+              <a href="#" class="linkSmaller">AppSource</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Visual Studio
+              <a href="#" class="linkSmaller">Visual Studio
               </a>
             </li>
           </ul>
@@ -1506,43 +1552,69 @@
           <h6 class="fw-bold">Company</h6>
           <ul class="list-unstyled">
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Careers
+              <a href="#" class="linkSmaller">Careers
               </a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">About Microsoft</a>
+              <a href="#" class="linkSmaller">About Microsoft</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Company news</a>
+              <a href="#" class="linkSmaller">Company news</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Company news
+              <a href="#" class="linkSmaller">Company news
               </a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Investors</a>
+              <a href="#" class="linkSmaller">Investors</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Diversity and inclusion</a>
+              <a href="#" class="linkSmaller">Diversity and inclusion</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Accessibility</a>
+              <a href="#" class="linkSmaller">Accessibility</a>
             </li>
             <li>
-              <a href="#" class="text-white text-decoration-none linkSmaller">Sustainability
+              <a href="#" class="linkSmaller">Sustainability
               </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-  </div>
-  <div class="text-center p-2 bg-dark">
+      </nav>
+    </div>
+    <div class="text-center p-2 bg-dark">
     <a class="text-white" href="#">Shila Shahparnia</a> © 2023 Copyright
-  </div>
+    </div>
   </footer>
-      <!--end footer-->
-    </main>
+  <!--end footer-->
+  <!--Begin back to top-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up me-2 fs-4"></i>Back To Top</button>
+  <!--end back to top-->
+  <!--Begin expert chat-->
+  <div class="d-flex justify-content-end expert">
+    <button class="btn btn-primary text-capitalize text-black fw-bold" onclick="openForm()">Questions? Talk to an expert</button>
+  </div>
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h4 class="text-white mt-1">Chat with us</h4>
+     <div class="form-outline mb-4 mt-3">
+    <input type="text" id="name" class="form-control" />
+    <label class="form-label text-white" for="name">Name</label>
+      </div>
+    <div class="form-outline mb-4">
+    <input type="email" id="email" class="form-control" />
+    <label class="form-label text-white" for="email">Email address</label>
+    </div>
+      <label for="msg"><b class="text-white">Message</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+  
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+  <!--end expert chat-->
+</main>
     <!--Shila has finished the BS5 final project with MDB and Sass-->
     <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="./mdb/js/mdb.min.js"></script>
