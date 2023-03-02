@@ -23,6 +23,9 @@ figure.figure {
 div.box {
   height: 600px;
 }
+div.box1 {
+  height: 630px;
+}
 p,
 a {
   text-align: justify;
@@ -96,7 +99,7 @@ a.link {
   position: fixed;
   bottom: 40px;
   right: 30px;
-  z-index: 0;
+  z-index: 99;
   font-size: 16px;
   font-weight:bold ;
   border: none;
@@ -111,6 +114,7 @@ div.expert{
   position: fixed;
   bottom: 0;
   right: 30px;
+  z-index: 99;
 }
 
 /* The popup chat - hidden by default */
@@ -120,7 +124,7 @@ div.expert{
   bottom: 0;
   right: 15px;
   border: 3px solid #f1f1f1;
-  z-index: 9;
+  z-index: 99;
 }
 
 /* Add styles to the form container */
