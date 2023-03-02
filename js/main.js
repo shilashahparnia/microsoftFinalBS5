@@ -50,3 +50,42 @@ var swiper = new Swiper(".mySurface", {
     },
   },
 });
+
+let item = document.querySelector("a#drop");
+let itemDrop = document.querySelector("div.computers");
+let flag = true;
+item.addEventListener("click", function () {
+  if (flag === true) {
+    itemDrop.style.display = "block";
+    flag = false;
+  } else {
+    itemDrop.style.display = "none";
+    flag = true;
+  }
+});
+
+let items = document.querySelector("a#dropBusiness");
+let itemDrops = document.querySelector("div.computersBusiness");
+let me = true;
+items.addEventListener("click", function () {
+  if (me === true) {
+    itemDrops.style.display = "block";
+    me = false;
+  } else {
+    itemDrops.style.display = "none";
+    me = true;
+  }
+});
+
+let itemss = document.querySelector("a#all");
+let itemDropss = document.querySelector("div.allMicro");
+let menu = true;
+itemss.addEventListener("click", function () {
+  if (menu === true) {
+    itemDropss.style.display = "block";
+    menu = false;
+  } else {
+    itemDropss.style.display = "none";
+    menu = true;
+  }
+});

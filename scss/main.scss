@@ -1,8 +1,8 @@
 @import "variables";
 @import "swiper";
 
-main.wrapper{
-    width: 100%;
+main.wrapper {
+  width: 100%;
 }
 figure.figure {
   > img {
@@ -11,18 +11,81 @@ figure.figure {
   }
 }
 .carousel-control-prev-icon:after {
-    content: ""
+  content: "";
 }
 
 .carousel-control-next-icon:after {
-    content: ""
+  content: "";
 }
 /*div.me{
   height: 500px;
 }*/
-div.box{
+div.box {
   height: 600px;
 }
-p, a{
+p,
+a {
   text-align: justify;
+}
+a.linkSmaller {
+  font-size: 14px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+a.boxShadow {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  &:hover {
+   text-decoration: underline;
+  }
+}
+a.force {
+  font-size: 14px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+div.computers {
+  width: 1100px;
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  display: none;
+}
+div.computersBusiness {
+  width: 1100px;
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  display: none;
+}
+a.drop{
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  display: block;
+  font-size: 14px;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+ul.bigger{
+  width: 250px;
+}
+div.allMicro{
+  width: 1100px;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  display: none;
+}
+a.link{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  &:hover{
+    text-decoration: underline;
+  }
 }

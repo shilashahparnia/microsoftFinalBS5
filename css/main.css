@@ -61,5 +61,63 @@ figure.figure > img {
 div.box {
   height: 600px; }
 
-p, a {
+p,
+a {
   text-align: justify; }
+
+a.linkSmaller {
+  font-size: 14px; }
+  a.linkSmaller:hover {
+    text-decoration: underline; }
+
+a.boxShadow {
+  color: white;
+  font-size: 14px;
+  text-decoration: none; }
+  a.boxShadow:hover {
+    text-decoration: underline; }
+
+a.force {
+  font-size: 14px; }
+  a.force:hover {
+    text-decoration: underline; }
+
+div.computers {
+  width: 1100px;
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  display: none; }
+
+div.computersBusiness {
+  width: 1100px;
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  display: none; }
+
+a.drop {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  display: block;
+  font-size: 14px; }
+  a.drop:hover {
+    text-decoration: underline; }
+
+ul.bigger {
+  width: 250px; }
+
+div.allMicro {
+  width: 1100px;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  display: none; }
+
+a.link {
+  text-decoration: none;
+  color: white;
+  font-size: 14px; }
+  a.link:hover {
+    text-decoration: underline; }
